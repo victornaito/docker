@@ -6,5 +6,5 @@ COPY . .
 RUN npm run build
 
 # multi step docker builds
-FROM nginx
+FROM nginx 
 COPY --from=builder /app/build /usr/share/nginx/html
