@@ -8,4 +8,4 @@ before_install:
     - docker build -t victornaito/docker -f ./section6_CreatingAProduction_Grade_WorkFlow/client/Dockerfile.dev .//section6_CreatingAProduction_Grade_WorkFlow/client/
 
 script:
-    - docker run victornaito/docker npm run test -- --coverage
+    - docker run victornaito/docker npm run test && exit(0)
